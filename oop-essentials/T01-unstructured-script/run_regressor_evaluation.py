@@ -16,8 +16,8 @@ def main():
 
     df = pd.read_csv("../data/spotify_data_sample.csv", usecols=include_columns)
 
-    #df = df.sample(frac=0.1, replace=False, random_state=42)
-    #df.to_csv("../data/spotify_data_sample.csv")
+    #df = df.sample(frac=0.1, replace=False, random_state=42) # 10% sample of original data
+    #df.to_csv("../data/spotify_data_sample.csv") # we save this new sample
 
     numeric_data = df.select_dtypes(include=[np.number])
     categorical_data = df.select_dtypes(exclude=[np.number])
