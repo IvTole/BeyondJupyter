@@ -1,0 +1,3 @@
+Se realiza una actualizacion del script princial **run_regressor_evaluation.py**. En el primer paso, toda la lógica detrás de la evaluación de un modelo se guarda en una sola función ``evaluate_model()``, que incluye los pasos de entrenamiento (método ``.fit()``, predicciones con el modelo entrenado ``.predict()``, el uso de la metrica de eleccion con dichos valores de la predicción ``metrics.mean_absolute_error()``, y finalmente un print en consola con dicho valor de la métrica.)
+
+Esto nos permite reutilizar esta función para cada uno de los modelos dentro de la función **main()**, eliminando código duplicado, y así, si uno quisiera hacer cambios, los haría dentro de la función.
