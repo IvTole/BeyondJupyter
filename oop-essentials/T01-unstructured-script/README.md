@@ -13,3 +13,4 @@ Hay varios puntos a tratar,
 4. No hay parametrización y todos los parametros de la evaluacion se encuentran fijos
 5. No hay una forma simple de reutilizar el código para la evaluación.
 6. Todo el pipeline se encuentra "hard-coded" y se usa para todos los modelos de manera simultánea. No hay una manera simple de adaptar el pre-procesamiento solamente para un modelo en específico.
+
